@@ -68,8 +68,8 @@ export const loadScssThemeAsLess = (themeScssPath) => {
  * @return {string} A string representing an SCSS file containing all the theme and color
  *   variables used in Ant Design.
  */
-export const compileThemeVariables = (themeScssPath, entryPath = 'antd/lib/style/themes/default.less') => {
-  const themeEntryPath = require.resolve(entryPath);
+export const compileThemeVariables = (themeScssPath) => {
+  const themeEntryPath = require.resolve('ng-zorro-antd/style/themes/default.less');
   const variableOverrides = themeScssPath ? loadScssThemeAsLess(themeScssPath) : {};
 
   return extractLessVariables(themeEntryPath, variableOverrides)

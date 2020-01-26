@@ -1,10 +1,8 @@
 class AntdScssThemePlugin {
   SCSS_THEME_PATH;
-  ENTRY_THEME_PATH;
 
-  constructor(scssThemePath, entryThemePath) {
+  constructor(scssThemePath) {
     AntdScssThemePlugin.SCSS_THEME_PATH = scssThemePath;
-    AntdScssThemePlugin.ENTRY_THEME_PATH = entryThemePath;
   }
 
   /**
